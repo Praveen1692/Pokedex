@@ -22,7 +22,7 @@ const PokemonList = () => {
   })
 
   async function downloadPokemons() {
-    //setIsLoading(true);
+   
     setPokemonListState({...pokemonListState,isLoading:true});
     
     const respone = await axios.get(pokemonListState.pokedexUrl); // this download list of 20 pokemon;
